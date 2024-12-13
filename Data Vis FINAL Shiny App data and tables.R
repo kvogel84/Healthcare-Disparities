@@ -1,4 +1,5 @@
 library(readxl)
+library(dplyr)
 
 Data <- read_excel("C:/Users/KPVog/OneDrive/Documents/ER visit risks for Shiny App.xlsx")
 ER2019_age <- Data %>%  filter(Year == 2019, Characteristics == "Patient Age Group")  
